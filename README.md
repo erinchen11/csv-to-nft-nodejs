@@ -1,25 +1,35 @@
 # CSV to NFT with Node.js and React.js
 
+User can upload CSV file to mint NFT, and store in IPFS.
+
+
 ## Backend
-npm install
-npm start
+- npm install
+- npm start
+
+create a public directory in backend root
 
 ## Front end
-npm install
-npm start
+- npm install
+- npm start
 
 ## Smart contract
 
+<<<<<<< HEAD
 npm install --save-dev hardhat
 npx hardhat
 
 deploy on rinkeby after develope smart contract 
+=======
+deploy on rinkeby test network after develope smart contract 
+>>>>>>> 6ea217e84eed1b23907233d0c0e977b620136f63
 
-NFT contract deployed to: 0xe6D825262E7549f38E8F64FCc9FAb4cDd3010Ab3
+NFT contract address: 0xe6D825262E7549f38E8F64FCc9FAb4cDd3010Ab3
 
 ## Demo Result
 
 <img src="demo.png" width="500px" /> 
+<<<<<<< HEAD
 
 ## Use Docker containers to seperate Backend and Frontend
 
@@ -47,3 +57,5 @@ run container of frontend
 
 
 
+=======
+>>>>>>> 6ea217e84eed1b23907233d0c0e977b620136f63
