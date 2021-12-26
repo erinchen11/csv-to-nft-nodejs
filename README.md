@@ -29,7 +29,6 @@ NFT contract address: 0xe6D825262E7549f38E8F64FCc9FAb4cDd3010Ab3
 ## Demo Result
 
 <img src="demo.png" width="500px" /> 
-<<<<<<< HEAD
 
 ## Use Docker containers to seperate Backend and Frontend
 
@@ -56,6 +55,3 @@ run container of frontend
 - docker run -d -p 8085:80 --name myfrontend --network nft_network frontend:lastest
 
 
-
-=======
->>>>>>> 6ea217e84eed1b23907233d0c0e977b620136f63
