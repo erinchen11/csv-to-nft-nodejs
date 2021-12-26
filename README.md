@@ -1,5 +1,8 @@
 # CSV to NFT with Node.js and React.js
 
+User can upload CSV file to mint NFT, and store in IPFS.
+
+
 ## Backend
 - npm install
 - npm start
