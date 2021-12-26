@@ -4,6 +4,8 @@
 npm install
 npm start
 
+create a public dir of backend root
+
 ## Front end
 npm install
 npm start
