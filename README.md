@@ -19,4 +19,4 @@ NFT contract deployed to: 0xe6D825262E7549f38E8F64FCc9FAb4cDd3010Ab3
 
 ## Demo Result
 
-<img src="demo.png" width="300px" /> 
+<img src="demo.png" width="500px" /> 
