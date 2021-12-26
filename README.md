@@ -13,7 +13,7 @@ npm start
 npm install --save-dev hardhat
 npx hardhat
 
-after develope smart contract deploy on rinkeby
+deploy on rinkeby after develope smart contract 
 
 NFT contract deployed to: 0xe6D825262E7549f38E8F64FCc9FAb4cDd3010Ab3
 
