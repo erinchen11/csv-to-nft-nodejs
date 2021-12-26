@@ -12,6 +12,13 @@ app.use(bodyParser.json());
 app.use('/mint',require('./routes/MintRoutes'));
 app.use('/resolve',require('./routes/PreviewRoutes'));
 
+app.use(function(req, res, next) {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+    res.setHeader('Access-Control-Allow-Credentials', true);
+    next();
+});
 
 console.log("Start storing")
 

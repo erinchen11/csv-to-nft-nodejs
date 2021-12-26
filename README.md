@@ -13,10 +13,37 @@ npm start
 npm install --save-dev hardhat
 npx hardhat
 
-after develope smart contract deploy on rinkeby
+deploy on rinkeby after develope smart contract 
 
 NFT contract deployed to: 0xe6D825262E7549f38E8F64FCc9FAb4cDd3010Ab3
 
 ## Demo Result
 
-<img src="demo.png" width="300px" /> 
+<img src="demo.png" width="500px" /> 
+
+## Use Docker containers to seperate Backend and Frontend
+
+start docker daemon, eg. docker dashboard.
+
+- docker network create nft_network
+
+build image of backend
+
+- cd backend
+- docker build -t backend:lastest .
+
+run container of backend
+- docker run -d -p 8000:5000 --name mybackend --network nft_network backend:lastest
+
+build image of frontend
+
+- cd frontend
+- docker build -t frontend:lastest .
+
+echo "REACT_APP_Server_URL=http://localhost:8000/" > ./frontend/.env.production
+
+run container of frontend
+- docker run -d -p 8085:80 --name myfrontend --network nft_network frontend:lastest
+
+
+
