@@ -12,12 +12,9 @@ create a public dir of backend root
 
 ## Smart contract
 
-- npm install --save-dev hardhat
-- npx hardhat
+deploy on rinkeby test network after develope smart contract 
 
-deploy on rinkeby after develope smart contract 
-
-NFT contract deployed to: 0xe6D825262E7549f38E8F64FCc9FAb4cDd3010Ab3
+NFT contract address: 0xe6D825262E7549f38E8F64FCc9FAb4cDd3010Ab3
 
 ## Demo Result
 
