@@ -1,19 +1,19 @@
 # CSV to NFT with Node.js and React.js
 
 ## Backend
-npm install
-npm start
+- npm install
+- npm start
 
 create a public dir of backend root
 
 ## Front end
-npm install
-npm start
+- npm install
+- npm start
 
 ## Smart contract
 
-npm install --save-dev hardhat
-npx hardhat
+- npm install --save-dev hardhat
+- npx hardhat
 
 deploy on rinkeby after develope smart contract 
 
