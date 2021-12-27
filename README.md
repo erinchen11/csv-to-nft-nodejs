@@ -15,21 +15,18 @@ create a public directory in backend root
 
 ## Smart contract
 
-<<<<<<< HEAD
 npm install --save-dev hardhat
 npx hardhat
 
 deploy on rinkeby after develope smart contract 
 =======
 deploy on rinkeby test network after develope smart contract 
->>>>>>> 6ea217e84eed1b23907233d0c0e977b620136f63
 
 NFT contract address: 0xe6D825262E7549f38E8F64FCc9FAb4cDd3010Ab3
 
 ## Demo Result
 
 <img src="demo.png" width="500px" /> 
-<<<<<<< HEAD
 
 ## Use Docker containers to seperate Backend and Frontend
 
@@ -55,7 +52,10 @@ echo "REACT_APP_Server_URL=http://localhost:8000/" > ./frontend/.env.production
 run container of frontend
 - docker run -d -p 8085:3000 --name myfrontend --network nft_network --env-file .env frontend:lastest
 
+<<<<<<< HEAD
 docker run -d -p 8085:80 --name myfrontend --network nft_network --env-file .env react-nginx:lastest  
 
 =======
 >>>>>>> 6ea217e84eed1b23907233d0c0e977b620136f63
+=======
+>>>>>>> b9184bb7d3651cbe03ec32f851ca8c0cd6141f7a
