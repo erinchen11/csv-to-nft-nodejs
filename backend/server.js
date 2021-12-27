@@ -6,11 +6,16 @@ const bodyParser = require("body-parser");
 const app = express();
 
 app.use(cors());
+app.options('*', cors())
 app.use(bodyParser.json());
 // router group
 // "/mint"
 app.use('/mint',require('./routes/MintRoutes'));
 app.use('/resolve',require('./routes/PreviewRoutes'));
+app.get('/health_check',function(req,res){
+    res.status(200).json('success')
+
+});
 
 app.use(function(req, res, next) {
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -20,11 +25,13 @@ app.use(function(req, res, next) {
     next();
 });
 
+
+
 console.log("Start storing")
 
 
-app.listen(8000, function() {
+app.listen(process.env.SERVER_PORT, function() {
 
-    console.log('App running on port 8000');
+    console.log('App running on port '+ process.env.SERVER_PORT);
 
 });

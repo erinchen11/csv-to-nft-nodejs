@@ -13,8 +13,9 @@ RUN apk update && apk upgrade && \
 
 RUN npm install git+https://git@github.com/dignifiedquire/webcrypto-shim.git
 
+
 ## copy all file into the WORKDIR
 COPY . .
 
-EXPOSE 5000
+EXPOSE ${SERVER_PORT}
 CMD ["npm","start"]

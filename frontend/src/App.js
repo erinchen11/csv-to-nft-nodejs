@@ -39,7 +39,7 @@ class App extends Component {
         data.append('file', this.state.selectedFile)
        
         // use post to pass csv file to backend
-        axios.post("http://localhost:8000/mint/nft", data, {})
+        axios.post(process.env.REACT_APP_Server_URL+ "/mint/nft", data, {})
         .then(async res => {
             console.log("csv upload " + res.statusText)
             console.log("res body : " + JSON.stringify(res.data));
@@ -81,11 +81,12 @@ class App extends Component {
 
     // preview JSON from uploaded CSV
     onPreviewHandler = () => {
+        console.log("process.env"+process.env.REACT_APP_Server_URL);
         let data = new FormData() 
         data.append('file', this.state.selectedFile)
        
 
-        axios.post("http://localhost:8000/resolve/csv", data, {})
+        axios.post(process.env.REACT_APP_Server_URL+"/resolve/csv", data, {})
         .then(res => {
             console.log("csv upload " + res.statusText)
             console.log("res body : " + JSON.stringify(res.data));
