@@ -48,6 +48,7 @@ build image of frontend
 - docker build -t frontend:lastest .
 
 
-run container of frontend
-- docker run -d -p 8085:3000 --name myfrontend --network nft_network --env-file .env frontend:lastest
+run container of frontend  
+- docker run -d -p 8085:80 --name myfrontend --network nft_network --env-file .env frontend:lastest
 
+nginx default port is 80
