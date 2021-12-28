@@ -47,12 +47,7 @@ build image of frontend
 - cd frontend
 - docker build -t frontend:lastest .
 
-echo "REACT_APP_Server_URL=http://localhost:8000/" > ./frontend/.env.production
 
-run container of frontend
-- docker run -d -p 8085:3000 --name myfrontend --network nft_network --env-file .env frontend:lastest
-
-
-- docker run -d -p 8085:80 --name myfrontend --network nft_network --env-file .env react-nginx:lastest  
-
+run container of frontend  
+- docker run -d -p 8085:80 --name myfrontend --network nft_network --env-file .env frontend:lastest
 
